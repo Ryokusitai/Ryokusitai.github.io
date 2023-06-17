@@ -10,7 +10,7 @@ import OldMassFabricatorRecipe from './assets/OldMassFabricator_Recipe.png';
 useDark();
 
 const activeName = ref('1.7.10');
-const dialogVisible = ref(true);
+const dialogVisible = ref(false);
 </script>
 
 <template>
