@@ -1,35 +1,26 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap');
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+body {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  --el-font-size-base: 16px;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #f4fef9;
+    --bg-color-disabled: #f5faf8;
   }
-}
-
-@media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
+    background-color: var(--bg-color);
   }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  /* body {
+    --el-bg-color-overlay: var(--bg-color);
+    --el-fill-color-light: var(--bg-color-disabled);
   }
+  .el-card {
+    --el-card-bg-color: var(--bg-color) !important;
+  }
+  .el-tabs__content, .el-tabs__item.is-active {
+    background-color: var(--bg-color);
+  } */
 }
