@@ -1,4 +1,6 @@
 <script setup>
+import { useDark } from '@vueuse/core';
+useDark();
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
